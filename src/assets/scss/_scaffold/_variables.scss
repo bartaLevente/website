@@ -1,0 +1,39 @@
+/* Screen sizes */
+$screen-xs: 320px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+$sidebar-width: 250px;
+$input-margin: 300px;
+$conversation-width: calc(100dvw - $sidebar-width - $input-margin);
+$mobile-input-margin: 50px;
+
+/* Colors */
+$white: #fff;
+$black: #000;
+$gray: #c6c6c6;
+$light-gray: #e4e3e4;
+$dark-blue: #1f2b4a;
+
+$primary-color: #1b2735;
+$secondary-color: #f5f7fa;
+$placeholder-color: #b4b4b4;
+$background-color: #fbfafa;
+
+$text-color: #f5f7fa;
+$input-text-color: #6b7185;
+$border-color: #dadbe0;
+$scrollbar-color: #5e5e5e;
+$scrollbar-hover-color: #757575;
+
+$horzintal-line-color: #696969;
+
+$error: red;
+
+/* Font */
+$font-family-base: "Inter", Arial, sans-serif;
+$font-family-playfair: "Playfair Display";
+$font-family-audiowide: "Audiowide";
+$font-size-base: 13px;
+$line-height-base: calc(20 / 13) !default;

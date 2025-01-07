@@ -1,0 +1,88 @@
+i.icon,
+div.icon {
+  display: inline-block;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+
+  background: no-repeat;
+  background-color: $black;
+  height: 18px;
+  width: 18px;
+
+  // Colors
+
+  &.white {
+    background-color: $white;
+  }
+  &.black {
+    background-color: $black;
+  }
+  &.large {
+    height: 36px;
+    width: 36px;
+  }
+
+  // Icons
+
+  &.loader {
+    mask-image: url('@/assets/img/icons/loader.svg');
+  }
+  &.plus {
+    mask-image: url('@/assets/img/icons/plus.svg');
+  }
+  &.exit {
+    mask-image: url('@/assets/img/icons/exit.svg');
+  }
+  &.add {
+    mask-image: url('@/assets/img/icons/add.svg');
+  }
+  &.logo {
+    mask-image: url('@/assets/img/icons/logo.svg');
+  }
+  &.loading {
+    mask-image: url('@/assets/img/icons/loading.svg');
+    animation: spin 1s linear infinite;
+  }
+  &.send {
+    mask-image: url('@/assets/img/icons/send.svg');
+  }
+  &.delete {
+    mask-image: url('@/assets/img/icons/delete.svg');
+  }
+  &.hamburger {
+    mask-image: url('@/assets/img/icons/hamburger.svg');
+  }
+  &.close {
+    mask-image: url('@/assets/img/icons/close.svg');
+  }
+}
+
+a.icon-wrapper .badge {
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-inline {
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
