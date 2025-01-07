@@ -1,0 +1,8 @@
+body{
+    font-size: xx-large;
+    text-align: center;
+}
+.landing-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6347 50%, #4682b4 50%);
+}
