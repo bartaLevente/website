@@ -5,6 +5,7 @@
       <IntroTextComponent :title="intro_text_title" :welcome-message="intro_text_welcome"/>
     </div>
     <AboutComponent :title="about_text_title" :about-text-p1="about_text_p1" :about-text-p2="about_text_p2"/>
+    <EducationComponent />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import PictureComponent from '../components/PictureComponent.vue';
 import IntroTextComponent from '../components/IntroTextComponent.vue';
 import AboutComponent from '../components/AboutComponent.vue';
+import EducationComponent from '../components/EducationComponent.vue';
 
 const intro_text_title = "Barta Levente";
 const intro_text_welcome = "Welcome to my portfolio! I'm a passionate software developer with a focus on creating innovative, efficient solutions through clean code and modern technologies. With experience across web development, deep learning, and AI projects, I'm constantly seeking to push the boundaries of what's possible. Let's get started!";
