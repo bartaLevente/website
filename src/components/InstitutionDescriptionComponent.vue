@@ -1,7 +1,6 @@
 <template>
-  <div class="school">
+  <div class="institution-description">
     <h2>{{ name }}</h2>
-    <p>{{ year }}</p>
     <p>{{ description }}</p>
   </div>
 </template>
@@ -11,10 +10,6 @@
 
 const props = defineProps({
   name: {
-    type: String,
-    required: true
-  },
-  year: {
     type: String,
     required: true
   },
