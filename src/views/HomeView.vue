@@ -9,6 +9,7 @@
       <CareerComponent :section-title="'Education'" :data="educationItems" />
       <CareerComponent :section-title="'Experience'" :data="experienceItems" />
     </div>
+    <SkillsComponent />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import PictureComponent from '../components/PictureComponent.vue';
 import IntroTextComponent from '../components/IntroTextComponent.vue';
 import AboutComponent from '../components/AboutComponent.vue';
 import CareerComponent from '../components/CareerComponent.vue';
+import SkillsComponent from '../components/SkillsComponent.vue';
 
 
 
