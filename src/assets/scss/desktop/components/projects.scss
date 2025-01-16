@@ -1,0 +1,27 @@
+.projects {
+  background: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+
+  h3 {
+    color: black;
+    padding-bottom: 5px;
+  }
+
+  h2{
+    color: rgb(17, 104, 68);
+    padding-top: 0;
+    font-variant: small-caps;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+  }
+}

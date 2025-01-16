@@ -10,6 +10,7 @@
       <CareerComponent :section-title="'Experience'" :data="experienceItems" />
     </div>
     <SkillsComponent />
+    <ProjectsComponent />
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import IntroTextComponent from '../components/IntroTextComponent.vue';
 import AboutComponent from '../components/AboutComponent.vue';
 import CareerComponent from '../components/CareerComponent.vue';
 import SkillsComponent from '../components/SkillsComponent.vue';
+import ProjectsComponent from '../components/ProjectsComponent.vue';
 
 
 
