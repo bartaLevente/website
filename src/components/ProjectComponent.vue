@@ -2,7 +2,7 @@
   <div class="project">
     <h2>{{ title }}</h2>
     <div class="image-wrapper">
-      <img :src="process.env.NODE_ENV === 'production' ? '/website/' + image_path : image_path" alt="">
+      <img :src="resolvedImagePath" alt="">
       <p class="description">{{ short_description }}</p>
     </div>
     <div class="used-skills-wrapper">
@@ -42,8 +42,6 @@ const props = defineProps({
   },
 });
 
-onMounted(() => {
-
-});
+const resolvedImagePath = process.env.NODE_ENV === 'production' ? `/website/${props.image_path}` : props.image_path;
 
 </script>
