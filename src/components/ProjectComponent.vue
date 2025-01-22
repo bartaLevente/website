@@ -40,7 +40,9 @@ const props = defineProps({
   },
 });
 
-const images = import.meta.glob('../assets/*', { eager: true });
-const resolvedImagePath = images[`../assets/${props.image_path}`]?.default ?? props.image_path;
+const images = import.meta.globEager('@/assets/*');
+
+// Check if the image exists in the assets folder
+const resolvedImagePath = images[`@/assets/${props.image_path}`]?.default ?? props.image_path;
 
 </script>
