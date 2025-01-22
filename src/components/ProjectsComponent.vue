@@ -25,21 +25,21 @@ const projects = ref([
     title: "Portfolio website",
     short_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe",
     long_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe corrupti est, laudantium mollitia nihil obcaecati, autem corporis incidunt nam explicabo sit excepturi reprehenderit. Beatae!",
-    image_path: "src/assets/img/images/software.jpg",
+    image_path: "img/images/software.jpg",
     used_skills: ["Vue.js", "HTML", "CSS", "Javascript", "Pinia"]
   },
   {
     title: "Portfolio website",
     short_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe",
     long_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe corrupti est, laudantium mollitia nihil obcaecati, autem corporis incidunt nam explicabo sit excepturi reprehenderit. Beatae!",
-    image_path: "src/assets/img/images/software.jpg",
+    image_path: "img/images/software.jpg",
     used_skills: ["Vue.js", "HTML", "CSS", "Javascript", "Pinia"]
   },
   {
     title: "Portfolio website",
     short_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe",
     long_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe corrupti est, laudantium mollitia nihil obcaecati, autem corporis incidunt nam explicabo sit excepturi reprehenderit. Beatae!",
-    image_path: "src/assets/img/images/software.jpg",
+    image_path: "img/images/software.jpg",
     used_skills: ["Vue.js", "HTML", "CSS", "Javascript", "Pinia"]
   },
 ])

@@ -2,7 +2,7 @@
   <div class="project">
     <h2>{{ title }}</h2>
     <div class="image-wrapper">
-      <img :src="resolvedImagePath" alt="">
+      <img :src="imageUrl" alt="">
       <p class="description">{{ short_description }}</p>
     </div>
     <div class="used-skills-wrapper">
@@ -40,9 +40,6 @@ const props = defineProps({
   },
 });
 
-const images = import.meta.globEager('@/assets/*');
-
-// Check if the image exists in the assets folder
-const resolvedImagePath = images[`@/assets/${props.image_path}`]?.default ?? props.image_path;
+const imageUrl = new URL(`../assets/${props.image_path}`, import.meta.url).href;
 
 </script>
