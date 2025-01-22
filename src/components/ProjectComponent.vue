@@ -2,7 +2,7 @@
   <div class="project">
     <h2>{{ title }}</h2>
     <div class="image-wrapper">
-      <img :src="image_path" alt="">
+      <img :src="process.env.NODE_ENV === 'production' ? '/website/' + image_path : image_path" alt="">
       <p class="description">{{ short_description }}</p>
     </div>
     <div class="used-skills-wrapper">
