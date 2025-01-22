@@ -21,8 +21,6 @@
 
 <script setup>
 
-import { onMounted } from 'vue';
-
 const props = defineProps({
   title: {
     type: String,
@@ -42,6 +40,7 @@ const props = defineProps({
   },
 });
 
-const resolvedImagePath = process.env.NODE_ENV === 'production' ? `/website/${props.image_path}` : props.image_path;
+const images = import.meta.glob('../assets/*', { eager: true });
+const resolvedImagePath = images[`../assets/${props.image_path}`]?.default ?? props.image_path;
 
 </script>
