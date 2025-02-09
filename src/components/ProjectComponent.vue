@@ -1,45 +1,46 @@
 <template>
   <div class="project">
-    <h2>{{ title }}</h2>
-    <div class="image-wrapper">
-      <img :src="imageUrl" alt="">
-      <p class="description">{{ short_description }}</p>
-    </div>
+    <h2>{{ project.title }}</h2>
+    <img :src="imageUrl" alt="">
     <div class="used-skills-wrapper">
       <div
-        v-for="(item,index) in used_skills"
+        v-for="(item, index) in project.used_skills.slice(0,3)"
         :key="index"
         class="used-skill-item"
       >
         {{ item }}
       </div>
-      <a href="">read more</a>
+      <div class="used-skill-item">+{{ project.used_skills.length - 3 }}</div>
     </div>
+    <div @click="openProjectModal(project)" class="modal-opener">
+      Read more -->
+    </div>
+    <ProjectModal
+      v-model:isModalOpen="isProjectModalOpen"
+      :project="selectedProject"
+      @update:model-value="isProjectModalOpen = $event"
+    />
   </div>
 </template>
 
-
 <script setup>
+import { ref } from 'vue';
+import ProjectModal from '@/components/ProjectModal.vue';
 
 const props = defineProps({
-  title: {
-    type: String,
+  project: {
+    type: Object,
     required: true
-  },
-  short_description: {
-    type: String,
-    required: true
-  },
-  image_path: {
-    type: String,
-    required: true
-  },
-  used_skills: {
-    type: Array,
-    required: true
-  },
+  }
 });
 
-const imageUrl = new URL(`../assets/${props.image_path}`, import.meta.url).href;
+const imageUrl = new URL(`../assets/${props.project.image_path}`, import.meta.url).href;
 
+const isProjectModalOpen = ref(false);
+const selectedProject = ref({});
+
+const openProjectModal = (project) => {
+  selectedProject.value = project;
+  isProjectModalOpen.value = true;
+};
 </script>
