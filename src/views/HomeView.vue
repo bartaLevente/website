@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <div class="icon-wrapper">
+      <a href="https://github.com/bartaLevente"><i class="icon gray large github"></i></a>
+      <a href="https://www.linkedin.com/in/levente-barta-298164202/"><i class="icon gray large linkedin"></i></a>
+    </div>
     <div class="wrapper">
       <PictureComponent />
       <IntroTextComponent :title="intro_text_title" :welcome-message="intro_text_welcome"/>

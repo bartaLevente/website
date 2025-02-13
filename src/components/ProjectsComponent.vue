@@ -34,11 +34,11 @@ const projects = ref([
     used_skills: ["Python", "Django", "Langchain", "Tensorflow"]
   },
   {
-    title: "Personal finance tracker",
+    title: "OITM verseny",
     short_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe",
     long_description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolore nesciunt ducimus veniam soluta saepe corrupti est, laudantium mollitia nihil obcaecati, autem corporis incidunt nam explicabo sit excepturi reprehenderit. Beatae!",
     image_path: "img/images/software.jpg",
-    used_skills: ["Vue.js", "HTML", "CSS", "Javascript", "Pinia"]
+    used_skills: ["Python", "Tensorflow", "Pytorch"]
   },
 ])
 

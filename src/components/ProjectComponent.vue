@@ -10,7 +10,7 @@
       >
         {{ item }}
       </div>
-      <div class="used-skill-item">+{{ project.used_skills.length - 3 }}</div>
+      <div v-if="project.used_skills.length>3" class="used-skill-item">+{{ project.used_skills.length - 3 }}</div>
     </div>
     <div @click="openProjectModal(project)" class="modal-opener">
       Read more -->

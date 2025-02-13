@@ -13,19 +13,23 @@
   animation: fadeIn 0.3s ease-out;
 }
 
+.modal-blur{
+  backdrop-filter: blur(30px);
+  padding: 30px;
+}
+
 .modal-content {
   position: relative;
   width: 90%;
   height: 90vh;
   max-width: 1500px;
   background-color: rgba(17, 17, 17, 0.8);
-  backdrop-filter: blur(30px);
   border-radius: 15px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   overflow: auto;
   border: 1px solid white;
   animation: slideIn 0.3s ease-out;
-  padding: 30px;
+  z-index: -1;
 
   .modal-description-wrapper{
     display: flex;
@@ -63,6 +67,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 
   .modal-skill-item {
     background-color: #2e7d32;
@@ -76,9 +82,6 @@
     transition: background-color 0.3s;
   }
 }
-
-
-
 
 @keyframes fadeIn {
   from {

@@ -1,6 +1,17 @@
 .home {
   background: linear-gradient(80deg, #3d3d3d 55.95%, #69b37b 56.05%);
 
+  .icon-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+      margin: 10px 10px 10px 0 ;
+    }
+  }
+
   .wrapper{
     position: relative;
     height: 100vh;

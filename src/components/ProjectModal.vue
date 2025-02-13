@@ -5,6 +5,7 @@
     class="modal-container"
     content-class="modal-content"
   >
+  <div class="modal-blur">
     <div class="modal-header">
       <h3>{{ project.title }}</h3>
       <h2>{{ project.short_description }}</h2>
@@ -17,6 +18,7 @@
     <div class="modal-skills">
       <div v-for="(skill, index) in project.used_skills" :key="index" class="modal-skill-item">{{ skill }}</div>
     </div>
+  </div>
   </VueFinalModal>
 </template>
 
