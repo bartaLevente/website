@@ -12,7 +12,9 @@
     </div>
 
     <div class="modal-description-wrapper">
-      <p class="modal-description">{{ project.long_description }}</p>
+      <div class="modal-description">{{ project.long_description }}
+        <h2><a :href="project.link" target="_blank" class="modal-link">Check it out here</a></h2>
+      </div>
       <img :src="imageUrl" alt="Project Image" class="modal-image" />
     </div>
     <div class="modal-skills">
@@ -35,7 +37,8 @@ const props = defineProps({
       short_description: '',
       long_description: '',
       image_path: '',
-      used_skills: []
+      used_skills: [],
+      link
     })
   },
   isModalOpen: {

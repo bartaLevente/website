@@ -20,8 +20,9 @@
   .projects-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     padding: 50px;
   }
 }
