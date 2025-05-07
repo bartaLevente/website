@@ -37,13 +37,13 @@ const skillItems = ref([
   { name: "html", value: 90, animatedValue: 0 },
   { name: "css", value: 80, animatedValue: 0 },
   { name: "javascript", value: 80, animatedValue: 0 },
+  { name: "react", value: 30, animatedValue: 0 },
+  { name: "vue", value: 30, animatedValue: 0 },
   { name: "c++", value: 50, animatedValue: 0 },
   { name: "c#", value: 75, animatedValue: 0 },
-  { name: "java", value: 60, animatedValue: 0 },
-  { name: "php", value: 60, animatedValue: 0 },
-  { name: "react", value: 60, animatedValue: 0 },
-  { name: "vue", value: 60, animatedValue: 0 },
   { name: "git", value: 40, animatedValue: 0 },
+  { name: "java", value: 60, animatedValue: 0 },
+  { name: "php", value: 30, animatedValue: 0 },
   { name: "docker", value: 30, animatedValue: 0 },
 ])
 
