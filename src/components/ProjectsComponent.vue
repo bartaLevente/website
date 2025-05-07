@@ -49,7 +49,7 @@ const projects = ref([
     long_description: "I'm currently taking a Udemy course on TensorFlow that focuses on building machine learning models using Python.\n So far, I’ve developed a solid understanding of Pandas and NumPy for data analysis and preprocessing, and I’ve applied this knowledge to implement regression models with TensorFlow. Through hands-on exercises, I’ve learned how to prepare datasets, train models, and evaluate their performance using common metrics.\nAs I progress through the course, I will be learning how to build and train classification models, implement convolutional neural networks (CNNs) for image recognition tasks, and apply advanced techniques such as feature extraction and fine-tuning with pre-trained models. ",
     image_path: "img/images/udemy_tensorflow.png",
     used_skills: ["Tensorflow", "Numpy", "Pandas", "Python",  "Google Colab"],
-    link: "https://www.udemy.com/course/complete-generative-ai-course-with-langchain-and-huggingface/"
+    link: "https://www.udemy.com/course/tensorflow-developer-certificate-machine-learning-zero-to-mastery/"
   },
 ])
 
