@@ -31,8 +31,8 @@ import ProjectsComponent from '../components/ProjectsComponent.vue';
 const intro_text_title = "Barta Levente";
 const intro_text_welcome = "Welcome to my portfolio! I'm a passionate software development student dedicated to building innovative and efficient solutions using clean code and modern technologies. I'm particularly interested in deep learning, natural language processing, and AI-driven projects.";
 const about_text_title = "About Me";
-const about_text_p1 = "My name is Levente Barta, and I am currently pursuing a Bachelor's Degree in Computer Science at the University of Pécs (PTE). After graduation, I plan to continue my studies by enrolling in a Master's program at Eötvös Loránd University (ELTE), with a specialization in Artificial Intelligence. For my thesis, I am working on a fact-checker AI project that explores Retrieval-Augmented Generation (RAG) and embedding techniques. I developed a strong interest in AI after completing a Deep Learning course at university."
-const about_text_p2 = "This has led me to seek career opportunities in AI/ML, where I can apply my knowledge and grow professionally. As I approach graduation, I am actively looking for positions where I can kickstart my career, particularly in AI or machine learning."
+const about_text_p1 = "My name is Levente Barta, and I recently graduated with a BSc in Computer Science from the University of Pécs (PTE) and will be starting my MSc in Computer Science at ELTE in Budapest this fall, specializing in Artificial Intelligence. I'm passionate about AI. At university, I completed courses in NLP and deep learning, and found a strong interest in both. For my thesis, I collaborated with two classmates to develop a Retrieval-Augmented Generation (RAG) system."
+const about_text_p2 = " I'm currently looking for opportunities I can pursue alongside my master’s studies, where I can apply my knowledge and grow professionally, particularly in AI."
 
 const educationItems = [
   {
